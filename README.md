@@ -1,3 +1,4 @@
+````markdown
 # 📹 Surveillance Vidéo Avancée avec YOLO
 
 Un système de **surveillance vidéo en temps réel** basé sur le modèle **YOLO (You Only Look Once)** pour la détection et le suivi d’objets, principalement des personnes, dans une zone d’intérêt définie.  
@@ -46,85 +47,83 @@ Applications typiques :
    ```bash
    git clone https://github.com/HaMzaCheh/Advanced-Video-Surveillance-YOLO.git
    cd Advanced-Video-Surveillance-YOLO
+````
 
-Créer et activer un environnement virtuel (recommandé) :
+2. Créer et activer un environnement virtuel (recommandé) :
 
-bash
-Copier
-Modifier
-python -m venv venv
-source venv/bin/activate  # Windows : venv\Scripts\activate
-Installer les dépendances :
+   ```bash
+   python -m venv venv
+   source venv/bin/activate  # Windows : venv\Scripts\activate
+   ```
 
-bash
-Copier
-Modifier
-pip install opencv-python ultralytics pandas numpy
-Placer les fichiers nécessaires :
+3. Installer les dépendances :
 
-coco.txt dans le dossier projet
+   ```bash
+   pip install opencv-python ultralytics pandas numpy
+   ```
 
-Vidéo .mp4 (ex: VIDEO.mp4) ou modifier le chemin dans main.py
+4. Placer les fichiers nécessaires :
 
-Lancer le script :
+   * `coco.txt` dans le dossier projet
+   * Vidéo `.mp4` (ex: `VIDEO.mp4`) ou modifier le chemin dans `main.py`
 
-bash
-Copier
-Modifier
-python main.py
-🖥️ Utilisation
-Une fenêtre Ecran_detection affiche la vidéo analysée.
+5. Lancer le script :
 
-Les objets détectés dans la zone d’intérêt sont encadrés en rouge.
+   ```bash
+   python main.py
+   ```
 
-La zone d’intérêt est dessinée en magenta.
+---
 
-Déplacez la souris dans la fenêtre pour afficher coordonnées (x,y) et valeurs BGR des pixels dans la console.
+## 🖥️ Utilisation
 
-Appuyez sur ESC pour quitter.
+* Une fenêtre `Ecran_detection` affiche la vidéo analysée.
+* Les objets détectés dans la zone d’intérêt sont encadrés en rouge.
+* La zone d’intérêt est dessinée en magenta.
+* Déplacez la souris dans la fenêtre pour afficher coordonnées (x,y) et valeurs BGR des pixels dans la console.
+* Appuyez sur `ESC` pour quitter.
+* Pour modifier la zone surveillée, ajustez la variable `area` dans `main.py`.
 
-Pour modifier la zone surveillée, ajustez la variable area dans main.py.
+---
 
-🧠 Architecture du Code
-Chargement du modèle YOLOv8 via ultralytics.
+## 🧠 Architecture du Code
 
-Lecture vidéo frame par frame avec OpenCV.
-
-Détection d’objets dans chaque frame.
-
-Vérification si les objets détectés sont dans la zone définie (cv2.pointPolygonTest).
-
-Visualisation des détections et de la zone d’intérêt.
-
-Gestion d’interactions souris pour affichage des infos pixel.
+* **Chargement du modèle** YOLOv8 via `ultralytics`.
+* **Lecture vidéo** frame par frame avec OpenCV.
+* **Détection d’objets** dans chaque frame.
+* **Vérification** si les objets détectés sont dans la zone définie (`cv2.pointPolygonTest`).
+* **Visualisation** des détections et de la zone d’intérêt.
+* **Gestion d’interactions souris** pour affichage des infos pixel.
 
 Le code est modulaire et facilement adaptable à d’autres vidéos ou zones.
 
-🎥 Simulation / Démo
-Lancez python main.py et observez la détection en temps réel.
+---
 
-Testez avec différentes vidéos ou modifiez la zone d’intérêt pour voir l’impact.
+## 🎥 Simulation / Démo
 
-Utilisez une vidéo avec des personnes dans un environnement surveillé (parking, entrée, etc.) pour une démonstration réaliste.
+* Lancez `python main.py` et observez la détection en temps réel.
+* Testez avec différentes vidéos ou modifiez la zone d’intérêt pour voir l’impact.
+* Utilisez une vidéo avec des personnes dans un environnement surveillé (parking, entrée, etc.) pour une démonstration réaliste.
 
-🤝 Contribution
+---
+
+## 🤝 Contribution
+
 Contributions bienvenues !
 
-Forkez le projet
+* Forkez le projet
+* Créez une branche dédiée :
 
-Créez une branche dédiée :
-
-bash
-Copier
-Modifier
-git checkout -b ma-nouvelle-fonctionnalite
-Testez vos modifications
-
-Ouvrez une pull request claire et documentée
+  ```bash
+  git checkout -b ma-nouvelle-fonctionnalite
+  ```
+* Testez vos modifications
+* Ouvrez une pull request claire et documentée
 
 Merci de respecter PEP 8 et d’inclure des tests si possible.
 
+---
 
-💬 Merci d’explorer ce projet ! Vos retours sont précieux pour l’améliorer 🚀
+💬 **Merci d’explorer ce projet ! Vos retours sont précieux pour l’améliorer 🚀**
 
-
+```
