@@ -1,4 +1,3 @@
-````markdown
 # 📹 Surveillance Vidéo Avancée avec YOLO
 
 Un système de **surveillance vidéo en temps réel** basé sur le modèle **YOLO (You Only Look Once)** pour la détection et le suivi d’objets, principalement des personnes, dans une zone d’intérêt définie.  
