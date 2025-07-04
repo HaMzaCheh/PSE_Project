@@ -50,16 +50,16 @@ Applications typiques :
 
 2. Créer et activer un environnement virtuel (recommandé) :
 
-   ```
+   ```bash
    python -m venv venv
    source venv/bin/activate  # Windows : venv\Scripts\activate
-   ```
+````
 
 3. Installer les dépendances :
 
    ```bash
    pip install opencv-python ultralytics pandas numpy
-   ```
+````
 
 4. Placer les fichiers nécessaires :
 
@@ -70,7 +70,7 @@ Applications typiques :
 
    ```bash
    python main.py
-   ```
+````
 
 ---
 
