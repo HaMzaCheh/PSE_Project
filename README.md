@@ -50,7 +50,7 @@ Applications typiques :
 
 2. Créer et activer un environnement virtuel (recommandé) :
 
-   ```bash
+   ```
    python -m venv venv
    source venv/bin/activate  # Windows : venv\Scripts\activate
    ```
