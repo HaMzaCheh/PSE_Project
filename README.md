@@ -1,4 +1,3 @@
-````markdown
 # 📹 Surveillance Vidéo Avancée avec YOLO  
 *Détection d’objets en temps réel pour une sécurité proactive*
 
